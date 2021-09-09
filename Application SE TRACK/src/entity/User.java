@@ -52,4 +52,15 @@ public class User implements java.io.Serializable {
     public void setRegisterDate(Date registerDate) {
         this.registerDate = registerDate;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", loginStatus=" + loginStatus +
+                ", registerDate=" + registerDate +
+                '}';
+    }
 }
