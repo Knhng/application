@@ -17,11 +17,24 @@ public class Launcher {
         // set DJ name into person created in line 8
         dj.setName(name);
 
-        // closes the scanner
-        input.close();
-
         // shows the just saved DJ name
         System.out.println("DJ name is " + dj.getName());
+
+        // creates a break line
+        System.out.println();
+
+        // create a scanner object
+        Scanner inputMethod = new Scanner(System.in);
+        // create a temporary Menu and ask which method the user wants to select
+        System.out.println("THIS IS A MENU PLEASE SELECT ONE OF THE FOLLOWING METHODS BY TYPING THE NAME"
+                + "\nPost a review" + "\nWrite a comment");
+        // takes input from the keyboard
+        String inputMethodAnswer = inputMethod.nextLine();
+        //shows the selected method to the user
+        System.out.println("Your method is: " + inputMethodAnswer);
+
+        // closes the scanner
+        input.close();
 
     }
 }
