@@ -1,4 +1,6 @@
-package entity;
+package Launcher;
+
+import entity.DJ;
 
 import java.util.Scanner;
 
