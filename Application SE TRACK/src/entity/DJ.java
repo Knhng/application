@@ -41,4 +41,14 @@ public class DJ implements java.io.Serializable {
     public void setStyle(String style) {
         this.style = style;
     }
+
+    @Override
+    public String toString() {
+        return "DJ{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", style='" + style + '\'' +
+                '}';
+    }
 }
